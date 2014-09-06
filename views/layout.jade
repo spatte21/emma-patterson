@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+  head
+    title Childminder Dunnington York | Emma Patterson | Home
+    meta(name='description', content='I am an Ofsted registered childminder based in Dunnington, York.  I am also a qualified primary teacher and a parent of two young children. I aim to provide a welcoming, safe and stimulating environment in which the needs of your child are met in an individual and personal way.')
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    link(rel='stylesheet', type='text/css', media='screen', href='/css/reset.css')
+    link(rel='stylesheet', type='text/css', media='screen', href='/css/style.css')
+    link(rel='stylesheet', type='text/css', media='screen', href='/css/grid_12.css')
+    link(rel='stylesheet', type='text/css', media='screen', href='/css/slider.css')
+    script(src='/js/jquery-1.7.min.js')
+    script(src='/js/jquery.easing.1.3.js')
+    script(src='/js/tms-0.4.1.js')
+    script(type='text/javascript').
+        $(document).ready(function(){
+            $('.slider')._TMS({
+                show:0,
+                pauseOnHover:true,
+                prevBu:'.prev',
+                nextBu:'.next',
+                playBu:false,
+                duration:800,
+                preset:'fade',
+                pagination:true,
+                pagNums:false,
+                slideshow:7000,
+                numStatus:false,
+                banners:false,
+                waitBannerAnimation:false,
+                progressBar:false
+            })
+        });
+  body
+      div.main
+          include ./includes/header.jade
+          // ==============================content================================
+          section#content
+              div.container_12
+                  include ./includes/news.jade
+                  div.grid_9.block-1
+                      div.pad-1.block-1-shadow
+
+                          block content
+
+                          div.pad-2
+                              | &nbsp;
+                  include ./includes/footer.jade

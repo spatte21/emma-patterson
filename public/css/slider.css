@@ -1,0 +1,15 @@
+/*--------- slider ---------*/
+#slide { position:relative; overflow:hidden; width:920px; padding:45px 40px 0 40px; z-index:2;}
+
+.slider { width:570px; height:265px; margin:0 auto; position:relative; z-index:2;  }
+.items { display:none;}
+
+.pagination { display:none; }
+
+.prev {position:absolute; top:170px; left:157px; display:block; width:55px; height:60px; background:url(../img/prev.png) 0 0 no-repeat; z-index:99;}
+.prev:hover {background-position:0 bottom;}
+.next {position:absolute; top:170px; right:153px; display:block; width:55px; height:60px; background:url(../img/next.png) 0 bottom no-repeat; z-index:99;}
+.next:hover {background-position:0 0;}
+
+.banner{display:none;}
+

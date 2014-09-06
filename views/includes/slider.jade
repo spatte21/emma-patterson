@@ -1,0 +1,8 @@
+div#slide
+    div.slider
+        ul.items
+            each val in sliderImages
+                li
+                    img(src="/img/slider-" + val + ".jpg", alt="")
+    a.prev(href='#')
+    a.next(href='#')
