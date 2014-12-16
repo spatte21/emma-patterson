@@ -5,7 +5,7 @@ module.exports = function (grunt) {
       options: {
         node: true
       },
-      all: ['Gruntfile.js', 'server.js', 'routes/**/*.js']
+      all: ['Gruntfile.js', 'server.js', 'routes/**/*.js', '_tests/**/*.js']
     },
     hapi: {
       custom_options: {
