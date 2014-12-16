@@ -66,5 +66,5 @@ module.exports = function() {
         reply.view('contacts', {page:'contacts', sliderImages: getSliderImagesStartingAt(7)});
       }
     }
-  ]
+  ];
 }();

@@ -10,7 +10,7 @@ server.connection({
   port: process.env.PORT || 3000
 });
 
-var azure = (typeof port === 'string' && port.indexOf('pipe') >= 0);
+var azure = (typeof process.env.PORT === 'string' && process.env.PORT.indexOf('pipe') >= 0);
 
 server.views({
   engines: {
