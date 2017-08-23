@@ -26,7 +26,7 @@ describe('Basic site navigation', function() {
 
     casper.then(function() {
       this.getTitle().should.contain('EYFS');
-      '.page-title'.should.have.text('Early Years Foundation Stage (Revised 2012)');
+      '.page-title'.should.have.text('Early Years Foundation Stage (Revised April 2017)');
     });
   });
 
